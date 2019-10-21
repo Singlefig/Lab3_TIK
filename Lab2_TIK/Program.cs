@@ -43,6 +43,7 @@ namespace Lab2_TIK
                     case 1:
                         {
                             matrix = GenerateMatrix(matrix, mass);
+                            Console.WriteLine("-----------------------------------------------");
                             for (int i = 0; i < 8; i++)
                             {
                                 for (int j = 0; j < 8; j++)
@@ -51,6 +52,7 @@ namespace Lab2_TIK
                                     if (j == 7)
                                     {
                                         Console.WriteLine();
+                                        Console.WriteLine("-----------------------------------------------");
                                     }
                                 }
                             }
@@ -144,11 +146,12 @@ namespace Lab2_TIK
                     }
                     sum += arrayForSumElements[i];
                 }
-
+                Console.WriteLine("-----------------------------------------------");
                 for (int i = 0; i < 8; i++)
                 {
                     Console.Write($"{Math.Round(arrayForSumElements[i], 3)}|");
                 }
+                Console.WriteLine("\n-----------------------------------------------");
                 sum = 0;
                 for (int i = 0; i < 8; i++)
                 {
@@ -171,11 +174,12 @@ namespace Lab2_TIK
                     }
                     sum += arrayForSumElements[i];
                 }
-                Console.WriteLine("Матрица верятностей появления вторичного алфавита");
+                Console.WriteLine("-----------------------------------------------");
                 for (int i = 0; i < 8; i++)
                 {
                     Console.Write($"{Math.Round(arrayForSumElements[i], 3)}|");
                 }
+                Console.WriteLine("\n-----------------------------------------------");
                 sum = 0;
                 for (int i = 0; i < 8; i++)
                 {
@@ -205,7 +209,7 @@ namespace Lab2_TIK
                     }
                 }
                 double H_A_B = Math.Round(sum * (-1), 4);
-
+                Console.WriteLine("-------------------------------------------------------------");
                 for (int i = 0; i < 8; i++)
                 {
                     for (int j = 0; j < 8; j++)
@@ -214,6 +218,7 @@ namespace Lab2_TIK
                         if (j == 7)
                         {
                             Console.WriteLine();
+                            Console.WriteLine("-------------------------------------------------------------");
                         }
                     }
                 }
@@ -240,6 +245,7 @@ namespace Lab2_TIK
                     }
                 }
                 double H_B_A = Math.Round(sum * (-1), 4);
+                Console.WriteLine("-------------------------------------------------------------");
                 for (int i = 0; i < 8; i++)
                 {
                     for (int j = 0; j < 8; j++)
@@ -248,6 +254,7 @@ namespace Lab2_TIK
                         if (j == 7)
                         {
                             Console.WriteLine();
+                            Console.WriteLine("-------------------------------------------------------------");
                         }
                     }
                 }
