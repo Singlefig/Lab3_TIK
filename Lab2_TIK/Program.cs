@@ -11,14 +11,14 @@ namespace Lab2_TIK
             double[] sumOfB = new double[8];
             double[] mass = new double[]
             {
-            0.017, 0.023, 0.021, 0.009, 0.016, 0.022, 0.026, 0.003,
-            0.005, 0.021, 0.017, 0.013, 0.013, 0.016, 0.021, 0.023,
-            0.006, 0.013, 0.006, 0.011, 0.017, 0.004, 0.023, 0.025,
-            0.014, 0.018, 0.018, 0.026, 0.015, 0.006, 0.005, 0.008,
-            0.014, 0.008, 0.012, 0.024, 0.014, 0.012, 0.013, 0.016,
-            0.023, 0.016, 0.012, 0.015, 0.023, 0.014, 0.011, 0.013,
-            0.013, 0.025, 0.024, 0.009, 0.007, 0.021, 0.017, 0.025,
-            0.023, 0.008, 0.022, 0.025, 0.005, 0.026, 0.015, 0.014
+            0.018, 0.023, 0.021, 0.009, 0.016, 0.024, 0.026, 0.003,
+            0.004, 0.021, 0.017, 0.013, 0.013, 0.020, 0.021, 0.023,
+            0.006, 0.013, 0.006, 0.011, 0.017, 0.018, 0.023, 0.015,
+            0.013, 0.018, 0.018, 0.026, 0.015, 0.006, 0.001, 0.008,
+            0.014, 0.008, 0.012, 0.024, 0.014, 0.002, 0.017, 0.012,
+            0.024, 0.016, 0.017, 0.015, 0.013, 0.014, 0.011, 0.007,
+            0.013, 0.025, 0.024, 0.004, 0.017, 0.021, 0.017, 0.025,
+            0.026, 0.005, 0.022, 0.025, 0.005, 0.026, 0.015, 0.024
             };
             double[,] matrix = new double[8, 8];
             double entropyOfUnion, entropyH_A, entropyH_B, entropyH_A_B, entropyH_B_A;
@@ -61,7 +61,7 @@ namespace Lab2_TIK
                     case 2:
                         {
                             entropyOfUnion = EntropyOfUnion(matrix);
-                            Console.WriteLine($"Энтропия объединения = {entropyOfUnion}");
+                            Console.WriteLine($"Энтропия объединения = {entropyOfUnion} бит");
 
                         }
                         break;
@@ -69,28 +69,28 @@ namespace Lab2_TIK
                         {
                             Console.WriteLine("Матрица верятностей появления первичного алфавита:");
                             entropyH_A = EntropyH_A(matrix);
-                            Console.WriteLine($"\nЭнтропия H(A) = { entropyH_A}");
+                            Console.WriteLine($"\nЭнтропия H(A) = { entropyH_A} бит");
                         }
                         break;
                     case 4:
                         {
                             Console.WriteLine("Матрица верятностей появления вторичного алфавита:");
                             entropyH_B = EntropyH_B(matrix);
-                            Console.WriteLine($"\nЭнтропия H(B) = { entropyH_B}");
+                            Console.WriteLine($"\nЭнтропия H(B) = { entropyH_B} бит");
                         }
                         break;
                     case 5:
                         {
                             Console.WriteLine("Матрица верятностей появления первичного алфавита:");
                             entropyH_A_B = EntropyH_A_B(matrix);
-                            Console.WriteLine($"\nЭнтропия H(A/B) = {entropyH_A_B}");
+                            Console.WriteLine($"\nЭнтропия H(A/B) = {entropyH_A_B} бит");
                         }
                         break;
                     case 6:
                         {
                             Console.WriteLine("Матрица верятностей появления вторичного алфавита:");
                             entropyH_B_A = EntropyH_B_A(matrix);
-                            Console.WriteLine($"\nЭнтропия H(B/A) = {entropyH_B_A}");
+                            Console.WriteLine($"\nЭнтропия H(B/A) = {entropyH_B_A} бит");
                         }
                         break;
                     case 7:
